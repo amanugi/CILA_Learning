@@ -4,7 +4,8 @@
     <img alt="Vue logo" src="./assets/logo.png" />
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     <Button name="Click Me"></Button>
-    <ButtonCounter></ButtonCounter>
+    <ButtonCounter></ButtonCounter> <br> <br>
+    <Child v-bind:users="users"></Child>
   </div>
 </template>
 
@@ -13,6 +14,8 @@
 import Navbar from "./components/Navbar.vue";
 import Button from "./components/Button.vue";
 import ButtonCounter from "./components/ButtonCounter.vue";
+import Child from "./components/Child.vue";
+
 
 export default {
   name: "App",
@@ -20,9 +23,18 @@ export default {
     //HelloWorld,
     Navbar,
     Button,
-    ButtonCounter
+    ButtonCounter,
+    Child
   },
+  data() {
+    return {users: [
+      {name: "Aman"},
+      {name: "Ankush"},
+      {name: "Parikh"}
+    ]}
+  }
 };
+
 </script>
 
 <style>
