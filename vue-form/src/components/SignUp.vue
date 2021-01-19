@@ -11,9 +11,9 @@
         <br><br>
         <p>Select Gender</p>
         <input type="radio" id="male" value="male" v-model="signUp.gender" />
-        <label for="cricket"> Male </label>
+        <label for="male"> Male </label>
         <input type="radio" id="female" value="female" v-model="signUp.gender" />
-        <label for="football"> Female </label>
+        <label for="female"> Female </label>
         <br><br>
         <button @click="signupUser">Sign Up</button>
     </div>
