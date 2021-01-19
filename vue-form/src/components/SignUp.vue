@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>Form using Checkbox and Radio button</h1>
-        <input type="text" placeholder="Your Name" v-model="signUp.username"> <br><br>
+        <input type="username" placeholder="Your Name" v-model="signUp.username"> <br><br>
         <input type="password" placeholder="Your password" v-model="signUp.password"><br><br>
         <p>Select Hobbies</p>
         <input type="checkbox" id="cricket" value="cricket" v-model="signUp.hobbies" />
