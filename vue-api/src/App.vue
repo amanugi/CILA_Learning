@@ -1,19 +1,25 @@
 <template>
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png" /> <br> -->
-    <Courses> </Courses>
+    <Courses> </Courses> <br><br> <hr>
+    <Post> </Post> <br><br> <hr>
+    <DeletePost> </DeletePost>
   </div>
 </template>
 
 <script>
 // import HelloWorld from "./components/HelloWorld.vue";
 import Courses from "./components/Courses.vue";
+import Post from "./components/Post.vue";
+import DeletePost from "./components/DeletePost.vue";
 
 
 export default {
   name: "App",
   components: {
-    Courses
+    Courses,
+    Post,
+    DeletePost
   }
 };
 
