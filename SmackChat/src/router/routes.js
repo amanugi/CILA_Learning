@@ -4,8 +4,11 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '/', component: () => import('pages/Index.vue') },
-      { path: '/search', component: () => import('pages/Search.vue') }
+      { path: '', component: () => import('pages/UsersPage.vue') },
+
+      { path: '/chats/:otherUserId', component: () => import('pages/ChatPage.vue') },
+
+      { path: '/auth', component: () => import('pages/AuthPage.vue') }
     ]
   },
 

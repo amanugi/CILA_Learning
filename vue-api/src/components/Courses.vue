@@ -27,7 +27,7 @@ export default {
     mounted() {
         Vue.axios.get('https://api.codingninjas.com/api/v3/courses').then(res => {
             this.listofCourses = res.data.data.courses;
-            console.warn(res);
+            console.log(res);
         })
     }
 }

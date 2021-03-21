@@ -9,6 +9,6 @@
 <script>
 export default {
     name: 'Child',
-    props: ['users']                // array of users
+    props: ['users']              // array of users
 }
 </script>

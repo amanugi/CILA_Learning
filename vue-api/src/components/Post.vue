@@ -5,7 +5,6 @@
             <input type="text" placeholder="Title" v-model="postData.title" /> <br><br>
             <input type="text" placeholder="Author" v-model="postData.author" /> <br><br>
             <button class="btn" type="submit">Post Data</button>
-
         </form>
     </div>
 </template>
@@ -30,7 +29,7 @@ export default {
     methods: {
         submitPost(e){          // e is an event
              this.axios.post('http://localhost:3000/posts', this.postData).then((result) => {
-                 console.warn("result", result);
+                 console.log("result", result);
              })
              e.preventDefault();
         }

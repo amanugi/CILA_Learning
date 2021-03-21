@@ -28,15 +28,15 @@ export default {
     },
     methods: {
         getUsers(){
-            this.axios.get('http://localhost:3000/posts').then((result) => {    // fetching the data from api
-                console.warn(result);
+            this.axios.get('http://localhost:3000/posts').then((result) => {    // fetches the data from api
+                //console.log(result);
                 this.users = result.data;
                 this.getUsers();
             })
         },
         deleteUser(id) {
             this.axios.delete('http://localhost:3000/posts/'+id).then((result) => {
-                console.warn(result);
+                console.log(result);
                 this.getUsers();
             })
         }

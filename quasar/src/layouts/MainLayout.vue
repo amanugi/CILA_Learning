@@ -1,8 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header>
+    <!-- <q-header>
       <q-toolbar>
-        
         <q-toolbar-title>
           <q-img src="../statics/logo.png" alt="logo" style="width: 60px"> </q-img> 
         </q-toolbar-title>
@@ -44,7 +43,7 @@
         </div>
         
       </q-toolbar>
-    </q-header>
+    </q-header> -->
 
     <q-drawer
       v-model="leftDrawerOpen"
@@ -70,13 +69,13 @@
     <q-page-container>
       <router-view />
     </q-page-container>
-    <q-footer elevated style="z-index: -1">
+    <!-- <q-footer  style="z-index: -1">
         <q-toolbar>
           <q-space />
             Copyright &copy; 2021
           <q-space />
         </q-toolbar>
-      </q-footer>
+      </q-footer> -->
   </q-layout>
 </template>
 
